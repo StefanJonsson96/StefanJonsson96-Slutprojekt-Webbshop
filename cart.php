@@ -202,7 +202,11 @@ if ($products_in_cart) {
                 <tr>
                     <td class="img">
                         <a href="index.php?page=product&id=<?=$product['ProduktID']?>">
-                             <!-- bild här -->
+                            <?php 
+                            /* 
+                            <img src="imgs/<?=$product['img']?>" width="50" height="50" alt="<?=$product['Färg']?>">
+                            */
+                            ?>
                         </a>
                     </td>
                     <td class="price"><?=$product['Färg']?></td>
@@ -232,8 +236,9 @@ if ($products_in_cart) {
                 </div>
                 </div>
                 <?php 
-if (isset($_POST["remove"])) { // Töm kundvagn
 
+if (isset($_POST["remove"])) { // Töm kundvagn
+    
     emptyCart();
     echo "Kundvagnen är tömd.";
 }

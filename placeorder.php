@@ -106,11 +106,36 @@ include "functions.php";
     </h2>
     <p>I dagsläget har vi bara stöd för faktura, ingen direktbetalning</p>
     <?php 
+<<<<<<< Updated upstream
     
     
     
     //placeOrder($kvantitet, $produktID); // Inte färdig.
     emptyCart() ?> <!--Tömmer kundvagn efter köp är färdigt, fattas kod för att ta bort det som har köpts ifrån databas. -->
+=======
+    // foreach ($_SESSION['cart'] as $key => $value) {
+
+    //     // print_r(array_values($_SESSION['cart']));
+    //     // echo "<br>";
+    //     // print_r(array_keys($_SESSION['cart']));
+
+    //     }
+        
+        for ($i = 0; $i < count($_SESSION['cart']); $i++) {
+            $key=key($_SESSION['cart']);
+            $val=$_SESSION['cart'][$key];
+            if ($val<> ' ') {
+               
+               $produktID = $key;
+               $kvantitet = $val ;
+               }
+             next($_SESSION['cart']);
+            }
+
+    placeOrder($kvantitet, $produktID); // Inte färdig. Vi kan bara köpa en enskild produkt än så länge.
+    emptyCart() // Tömmer kundvagn efter köp är färdigt, fattas kod för att ta bort det som har köpts ifrån databas.
+    ?>
+>>>>>>> Stashed changes
 </div>
 </div>
 <footer class="container">

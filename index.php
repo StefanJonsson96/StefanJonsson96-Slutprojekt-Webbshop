@@ -111,6 +111,7 @@ include 'functions.php';
               <div class="columnz">
             <div>
             <form action="cart.php" method="post">
+<<<<<<< Updated upstream
                   <input type="hidden" name="ProduktID" value="<?php produktid("caps", "Red")?>"> </input></br>
                   <label>Kategori: caps</label><br>
                   <label>Pris: <?php pris("caps", "Red")?>kr</label><br>
@@ -118,6 +119,14 @@ include 'functions.php';
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Röd</label><br>
                   <label>Kvantitet: <?php kvantitet("caps", "Red")?> </label></br>
+=======
+                  <input type="hidden" name="ProduktID" value="<?php produktid("Cap", "Red")?>"> </input></br>
+                  <label>Pris: <?php pris("Cap", "Red")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Röd</label><br>
+                  <label>Kvantitet: <?php kvantitet("Cap", "Red")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
                 </form>
@@ -131,6 +140,7 @@ include 'functions.php';
               <div class="columnz">
               <div>
               <form action="cart.php" method="post">
+<<<<<<< Updated upstream
                   <input type="hidden" name="ProduktID" value="<?php produktid("caps", "Purple")?>"> </input></br>
                   <label>Kategori: caps</label><br>
                   <label>Pris: <?php pris("caps", "Purple")?>kr</label><br>
@@ -138,6 +148,14 @@ include 'functions.php';
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Lila</label><br>
                   <label>Kvantitet: <?php kvantitet("caps", "Purple")?> </label></br>
+=======
+                  <input type="hidden" name="ProduktID" value="<?php produktid("Cap", "Purple")?>"> </input></br>
+                  <label>Pris: <?php pris("Cap", "Purple")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Lila</label><br>
+                  <label>Kvantitet: <?php kvantitet("Cap", "Purple")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
                 </form>
@@ -151,6 +169,7 @@ include 'functions.php';
               <div class="columnz">
               <div>
               <form action="cart.php" method="post">
+<<<<<<< Updated upstream
               <input type="hidden" name="ProduktID" value="<?php produktid("caps", "Green")?>"> </input></br>
                   <label>Kategori: caps</label><br>    
                   <label>Pris: <?php pris("caps", "Green")?>kr</label><br>
@@ -158,6 +177,14 @@ include 'functions.php';
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Grön</label><br>
                   <label>Kvantitet: <?php kvantitet("caps", "Green")?> </label></br>
+=======
+              <input type="hidden" name="ProduktID" value="<?php produktid("Cap", "Green")?>"> </input></br>   
+                  <label>Pris: <?php pris("Cap", "Green")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Grön</label><br>
+                  <label>Kvantitet: <?php kvantitet("Cap", "Green")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
                 </form>
@@ -170,6 +197,7 @@ include 'functions.php';
               <div class="columnz">
               <div>
               <form action="cart.php" method="post">
+<<<<<<< Updated upstream
               <input type="hidden" name="ProduktID" value="<?php produktid("caps", "Blue")?>"> </input></br>
                   <label>Kategori: caps</label><br>    
                   <label>Pris: <?php pris("caps", "Blue")?>kr</label><br>
@@ -177,6 +205,14 @@ include 'functions.php';
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Blå</label><br>
                   <label>Kvantitet: <?php kvantitet("caps", "Blue")?> </label></br>
+=======
+              <input type="hidden" name="ProduktID" value="<?php produktid("Cap", "Blue")?>"> </input></br>  
+                  <label>Pris: <?php pris("Cap", "Blue")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Blå</label><br>
+                  <label>Kvantitet: <?php kvantitet("Cap", "Blue")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
                 </form>
@@ -269,12 +305,21 @@ function showSlides(n) {
               <div class="columnz2">
             <div>
             <form action="cart.php" method="post">
+<<<<<<< Updated upstream
             <input type="hidden" name="ProduktID" value="<?php produktid("Hoodies", "Black")?>"> </input></br>
                   <label>Pris: <?php pris("Hoodies", "Black")?>kr</label><br>
                   <label>Material: 80% Akryl, 20% Ull</label><br>
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Svart</label><br>
                   <label>Kvantitet: <?php kvantitet("Hoodies", "Black")?> </label></br>
+=======
+            <input type="hidden" name="ProduktID" value="<?php produktid("Hoodie", "Black")?>"> </input></br>
+                  <label>Pris: <?php pris("Hoodie", "Black")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Svart</label><br>
+                  <label>Kvantitet: <?php kvantitet("Hoodie", "Black")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
             </form>
@@ -288,12 +333,21 @@ function showSlides(n) {
               <div class="columnz2">
               <div>
               <form action="cart.php" method="post">
+<<<<<<< Updated upstream
               <input type="hidden" name="ProduktID" value="<?php produktid("Hoodies", "Red")?>"> </input></br>
                   <label>Pris: <?php pris("Hoodies", "Red")?>kr</label><br>
                   <label>Material: 80% Akryl, 20% Ull</label><br>
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Röd</label><br>
                   <label>Kvantitet: <?php kvantitet("Hoodies", "Red")?> </label></br>
+=======
+              <input type="hidden" name="ProduktID" value="<?php produktid("Hoodie", "Red")?>"> </input></br>
+                  <label>Pris: <?php pris("Hoodie", "Red")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Röd</label><br>
+                  <label>Kvantitet: <?php kvantitet("Hoodie", "Red")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
               </form>
@@ -307,12 +361,21 @@ function showSlides(n) {
               <div class="columnz2">
               <div>
               <form action="cart.php" method="post">
+<<<<<<< Updated upstream
               <input type="hidden" name="ProduktID" value="<?php produktid("Hoodies", "Blue")?>"> </input></br>
                   <label>Pris: <?php pris("Hoodies", "Blue")?>kr</label><br>
                   <label>Material: 80% Akryl, 20% Ull</label><br>
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Blå</label><br>
                   <label>Kvantitet: <?php kvantitet("Hoodies", "Blue")?> </label></br>
+=======
+              <input type="hidden" name="ProduktID" value="<?php produktid("Hoodie", "Blue")?>"> </input></br>
+                  <label>Pris: <?php pris("Hoodie", "Blue")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Blå</label><br>
+                  <label>Kvantitet: <?php kvantitet("Hoodie", "Blue")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
               </form>
@@ -325,12 +388,21 @@ function showSlides(n) {
               <div class="columnz2">
               <div>
               <form action="cart.php" method="post">
+<<<<<<< Updated upstream
               <input type="hidden" name="ProduktID" value="<?php produktid("Hoodies", "Green")?>"> </input></br>
                   <label>Pris: <?php pris("Hoodies", "Green")?>kr</label><br>
                   <label>Material: 80% Akryl, 20% Ull</label><br>
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Grön</label><br>
                   <label>Kvantitet: <?php kvantitet("Hoodies", "Green")?> </label></br>
+=======
+              <input type="hidden" name="ProduktID" value="<?php produktid("Hoodie", "Green")?>"> </input></br>
+                  <label>Pris: <?php pris("Hoodie", "Green")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Grön</label><br>
+                  <label>Kvantitet: <?php kvantitet("Hoodie", "Green")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
               </form>
@@ -343,12 +415,21 @@ function showSlides(n) {
               <div class="columnz2">
               <div>
               <form action="cart.php" method="post">
+<<<<<<< Updated upstream
               <input type="hidden" name="ProduktID" value="<?php produktid("Hoodies", "Purple")?>"> </input></br>
                   <label>Pris: <?php pris("Hoodies", "Purple")?>kr</label><br>
                   <label>Material: 80% Akryl, 20% Ull</label><br>
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Lila</label><br>
                   <label>Kvantitet: <?php kvantitet("Hoodies", "Purple")?> </label></br>
+=======
+              <input type="hidden" name="ProduktID" value="<?php produktid("Hoodie", "Purple")?>"> </input></br>
+                  <label>Pris: <?php pris("Hoodie", "Purple")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Lila</label><br>
+                  <label>Kvantitet: <?php kvantitet("Hoodie", "Purple")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
               </form>
@@ -432,12 +513,21 @@ function showSlides2(n) {
               <div class="columnz3">
             <div>
             <form action="cart.php" method="post">
+<<<<<<< Updated upstream
             <input type="hidden" name="ProduktID" value="<?php produktid("T-Shirts", "Black")?>"> </input></br>
                   <label>Pris: <?php pris("T-Shirts", "Black")?>kr</label><br>
                   <label>Material: 80% Akryl, 20% Ull</label><br>
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Svart</label><br>
                   <label>Kvantitet: <?php kvantitet("T-Shirts", "Black")?> </label></br>
+=======
+            <input type="hidden" name="ProduktID" value="<?php produktid("T-Shirt", "Black")?>"> </input></br>
+                  <label>Pris: <?php pris("T-Shirt", "Black")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Svart</label><br>
+                  <label>Kvantitet: <?php kvantitet("T-Shirt", "Black")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
             </form>
@@ -451,12 +541,21 @@ function showSlides2(n) {
               <div class="columnz3">
               <div>
               <form action="cart.php" method="post">
+<<<<<<< Updated upstream
               <input type="hidden" name="ProduktID" value="<?php produktid("T-Shirts", "Blue")?>"> </input></br>
                   <label>Pris: <?php pris("T-Shirts", "Blue")?>kr</label><br>
                   <label>Material: 80% Akryl, 20% Ull</label><br>
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Blå</label><br>
                   <label>Kvantitet: <?php kvantitet("T-Shirts", "Blue")?> </label></br>
+=======
+              <input type="hidden" name="ProduktID" value="<?php produktid("T-Shirt", "Blue")?>"> </input></br>
+                  <label>Pris: <?php pris("T-Shirt", "Blue")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Blå</label><br>
+                  <label>Kvantitet: <?php kvantitet("T-Shirt", "Blue")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
             </form>
@@ -470,12 +569,21 @@ function showSlides2(n) {
               <div class="columnz3">
               <div>
               <form action="cart.php" method="post">
+<<<<<<< Updated upstream
               <input type="hidden" name="ProduktID" value="<?php produktid("T-Shirts", "Pink")?>"> </input></br>
                   <label>Pris: <?php pris("T-Shirts", "Pink")?>kr</label><br>
                   <label>Material: 80% Akryl, 20% Ull</label><br>
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Rosa</label><br>
                   <label>Kvantitet: <?php kvantitet("T-Shirts", "Pink")?> </label></br>
+=======
+              <input type="hidden" name="ProduktID" value="<?php produktid("T-Shirt", "Pink")?>"> </input></br>
+                  <label>Pris: <?php pris("T-Shirt", "Pink")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Rosa</label><br>
+                  <label>Kvantitet: <?php kvantitet("T-Shirt", "Pink")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
             </form>
@@ -488,12 +596,21 @@ function showSlides2(n) {
               <div class="columnz3">
               <div>
               <form action="cart.php" method="post">
+<<<<<<< Updated upstream
               <input type="hidden" name="ProduktID" value="<?php produktid("T-Shirts", "Purple")?>"> </input></br>
                   <label>Pris: <?php pris("T-Shirts", "Purple")?>kr</label><br>
                   <label>Material: 80% Akryl, 20% Ull</label><br>
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Lila</label><br>
                   <label>Kvantitet: <?php kvantitet("T-Shirts", "Purple")?> </label></br>
+=======
+              <input type="hidden" name="ProduktID" value="<?php produktid("T-Shirt", "Purple")?>"> </input></br>
+                  <label>Pris: <?php pris("T-Shirt", "Purple")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Lila</label><br>
+                  <label>Kvantitet: <?php kvantitet("T-Shirt", "Purple")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
             </form>
@@ -506,12 +623,21 @@ function showSlides2(n) {
               <div class="columnz3">
               <div>
               <form action="cart.php" method="post">
+<<<<<<< Updated upstream
               <input type="hidden" name="ProduktID" value="<?php produktid("T-Shirts", "Yellow")?>"> </input></br>
                   <label>Pris: <?php pris("T-Shirts", "Yellow")?>kr</label><br>
                   <label>Material: 80% Akryl, 20% Ull</label><br>
                   <label>Storlek: One size fits all</label><br>
                   <label>Färg: Gul</label><br>
                   <label>Kvantitet: <?php kvantitet("T-Shirts", "Yellow")?> </label></br>
+=======
+              <input type="hidden" name="ProduktID" value="<?php produktid("T-Shirt", "Yellow")?>"> </input></br>
+                  <label>Pris: <?php pris("T-Shirt", "Yellow")?>kr</label><br>
+                  <label>Material: 80% Akryl, 20% Ull</label><br>
+                  <label>Storlek: One size fits all</label><br>
+                  <label>Färg: Gul</label><br>
+                  <label>Kvantitet: <?php kvantitet("T-Shirt", "Yellow")?> </label></br>
+>>>>>>> Stashed changes
                   <input type="number" name="Kvantitet" placeholder="1" value="1"></input></br> 
                   <input type="submit" value="Lägg till i varukorg"></input>
             </form>
