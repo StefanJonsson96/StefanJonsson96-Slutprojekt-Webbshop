@@ -1,9 +1,4 @@
 <?php
-<<<<<<< Updated upstream
-
-
-=======
->>>>>>> Stashed changes
 function kvantitet($a, $b){
     $servername = "localhost";
     $username = "root";
@@ -126,8 +121,5 @@ function placeOrder($a, $b)
   /* close connection */
   mysqli_close($connection);
 }
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 ?>
