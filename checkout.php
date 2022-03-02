@@ -95,60 +95,22 @@ include "functions.php";
       </div>
 <div class="container marketing">
 <div class="row">
-    <h1>Tack för din order.</h1>
-    <h2>Faktura:
-        <ul>
-            <li>Summa: <?php echo $_SESSION['faktura'] ;?> kr.</li> <!-- Summa från session variabel -->
-            <li>OCR: <?php echo rand(20000000000, 99999999999)?></li> <!-- Slumpar fram ett OCR -->
-            <li>Bankgiro: 000-0000</li> <!-- Exempel bankgiro -->
-            <li>Clearing: 3300</li> <!-- Nordeas clearing # som exempel -->
-        </ul>
-    </h2>
-    <p>I dagsläget har vi bara stöd för faktura, ingen direktbetalning</p>
-    <?php 
-<<<<<<< Updated upstream
-    // foreach ($_SESSION['cart'] as $key => $value) {
+<form action="placeorder.php" method="POST">
+    <div>
+        <label for="Förnamn">Förnamn:</label>
+        <input type="text" name="Förnamn"><br>
+        <label for="Gatuaddress">Gatuaddress:</label>
+        <input type="text" name="Gatuaddress"><br>
+        <label for="Postnr">Postnr:</label>
+        <input type="text" name="Postnr"><br>
+        <label for="Stad">Stad:</label>
+        <input type="text" name="Stad"><br>
+        <label for="Telefon">Telefon</label>
+        <input type="text" name="Telefon">
+    </div>
 
-    //     // print_r(array_values($_SESSION['cart']));
-    //     // echo "<br>";
-    //     // print_r(array_keys($_SESSION['cart']));
-
-    //     }
-        
-=======
-        $isfirstloop = true;
->>>>>>> Stashed changes
-        for ($i = 0; $i < count($_SESSION['cart']); $i++) {
-            $key=key($_SESSION['cart']);
-            $val=$_SESSION['cart'][$key];
-            if ($val<> ' ') {
-<<<<<<< Updated upstream
-               
-               $produktID = $key;
-               $kvantitet = $val ;
-               }
-             next($_SESSION['cart']);
-            }
-
-    placeOrder($kvantitet, $produktID); // Inte färdig. Vi kan bara köpa en enskild produkt än så länge.
-    emptyCart() // Tömmer kundvagn efter köp är färdigt, fattas kod för att ta bort det som har köpts ifrån databas.
-=======
-               $produktID = $key;
-               $kvantitet = $val;
-
-               placeOrder($kvantitet, $produktID); // Lägger till order PER produkt, tex. 5st svarta shirtar, loopa en gång till 4st röda kepsar. osv.
-                    if ($isfirstloop) { 
-                      addCustomer(); // Lägg till customer bara en gång inte varje gång vi loopar, annars hade vi fått lika många customers som antal olika produkter.
-                      addOrder(getCustomer());// Lägg till order bara en gång inte varje gång vi loopar, annars hade vi fått lika många order som antal olika produkter.
-                      $isfirstloop = false;
-                    }
-               orderDetails(getOrder(), $produktID, $kvantitet); // Varje gång vi placerar en order på en sorts produkt, så läggs det till i order details.
-               }
-             next($_SESSION['cart']);
-            }
-    emptyCart(); // Tömmer kundvagn efter köp är färdigt.
->>>>>>> Stashed changes
-    ?>
+    <input type="submit" name="submit" value="Köp">
+</form>
 </div>
 </div>
 <footer class="container">
@@ -157,8 +119,4 @@ include "functions.php";
   </footer>
   </main>
 	</body>
-<<<<<<< Updated upstream
 </html>
-=======
-</html>
->>>>>>> Stashed changes

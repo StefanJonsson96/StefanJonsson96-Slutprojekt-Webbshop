@@ -66,4 +66,16 @@
     color: #999;
     text-decoration: none;
     cursor: pointer;
+<<<<<<< Updated upstream
   }
+=======
+  }
+  .litenbild {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+>>>>>>> Stashed changes

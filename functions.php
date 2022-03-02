@@ -121,5 +121,140 @@ function placeOrder($a, $b)
   /* close connection */
   mysqli_close($connection);
 }
+<<<<<<< Updated upstream
 
 ?>
+=======
+function getImg($test) 
+{
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "sinus";
+
+  $connection = new mysqli($servername, $username, $password, $dbname);
+
+  $result = $connection->query("SELECT Bild FROM produkt WHERE ProduktID = $test"); 
+  ?>
+
+  <?php if($result->num_rows > 0){ ?> 
+          <?php while($row = $result->fetch_assoc()){ ?> 
+              <img class="litenbild" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['Bild']); ?>" /> 
+          <?php } ?> 
+  <?php }else{ ?> 
+      <p class="status error">Image(s) not found...</p> 
+  <?php }
+
+}
+function addCustomer(){
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "Sinus";
+
+    $connection = new mysqli($servername, $username, $password, $dbname);
+
+  if(isset($_POST['buy']))
+  {
+      if (!empty($_POST['Förnamn'])) 
+      {
+          $Namn = $_POST['Förnamn'];
+          $Gatuadress = $_POST['Gatuaddress'];
+          $Postnr = $_POST['Postnr'];
+          $Stad = $_POST['Stad'];
+          $Telefon = $_POST['Telefon'];
+
+          $connection->query("INSERT into kund (Namn, Gatuadress, Postnr, Stad, Telefon) VALUES ('$Namn', '$Gatuadress','$Postnr', '$Stad', '$Telefon')");
+              
+  } 
+}
+}
+function getCustomer()
+{
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "Sinus";
+
+  $connection = new mysqli($servername, $username, $password, $dbname);
+  $statement = $connection->prepare("SELECT KundID FROM kund ORDER BY KundID DESC LIMIT 1;");
+  $statement->execute();
+  
+  /* bind result variables */
+  mysqli_stmt_bind_result($statement, $test);
+  
+  
+  /* fetch values */
+  $arr = array();
+  while (mysqli_stmt_fetch($statement)) {
+      $arr[] = $test;
+  }
+  
+  /* close statement */
+  mysqli_stmt_close($statement);
+
+  /* close connection */
+  mysqli_close($connection);
+
+  return $arr[0];
+  
+}
+function addOrder($kund){
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "Sinus";
+
+  $connection = new mysqli($servername, $username, $password, $dbname);
+  
+  
+
+    $statement = $connection->prepare("INSERT into orders (KundID, Orderdatum) VALUES ($kund, NOW())");
+    $statement->execute();  
+    mysqli_stmt_close($statement);
+    mysqli_close($connection);
+  
+}
+function getOrder(){
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "Sinus";
+
+  $connection = new mysqli($servername, $username, $password, $dbname);
+  $statement = $connection->prepare("SELECT OrdersID FROM orders ORDER BY OrdersID DESC LIMIT 1;");
+  $statement->execute();
+  
+  /* bind result variables */
+  mysqli_stmt_bind_result($statement, $test);
+  
+  
+  /* fetch values */
+  $arr = array();
+  while (mysqli_stmt_fetch($statement)) {
+      $arr[] = $test;
+  }
+  
+  /* close statement */
+  mysqli_stmt_close($statement);
+
+  /* close connection */
+  mysqli_close($connection);
+
+  return $arr[0];
+}
+function orderDetails($orderid, $produktid, $antal){
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "Sinus";
+
+    $connection = new mysqli($servername, $username, $password, $dbname);
+
+    $connection->query("INSERT into orderdetails (OrdersID, ProduktID, Antal) VALUES ($orderid, $produktid, $antal)");
+    $connection->close();      
+}
+?>
+>>>>>>> Stashed changes

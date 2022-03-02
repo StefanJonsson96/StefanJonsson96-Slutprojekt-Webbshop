@@ -181,6 +181,7 @@ if ($products_in_cart) {
 <div class="row">
       <div class="col-lg-4">   
     <h1>Shopping Cart</h1>
+<<<<<<< Updated upstream
     <form action="cart.php" method="post" style="border: solid 2px black;">
         <table >
             <thead>
@@ -188,6 +189,16 @@ if ($products_in_cart) {
                     <td colspan="2" style="border: solid 2px black;"><b>Produkt</td></b>
                     <td style="border: solid 2px black;"><b>Kategori</td></b>
                     <td style="border: solid 2px black;"><b>Pris</td></b>
+=======
+    <form action="cart.php" method="post">
+        <table style="border: solid 2px black;">
+            <thead>
+                <tr>
+                    <td style="border: solid 2px black;"><b>Bild</td></b>
+                    <td colspan="1" style="border: solid 2px black;"><b>Produkt</td></b>
+                    <td style="border: solid 2px black;"><b>Kategori</td></b>
+                    <td style="border: solid 2px black;"><b>Styck-Pris</td></b>
+>>>>>>> Stashed changes
                     <td style="border: solid 2px black;"><b>Antal</td></b>
                     <td style="border: solid 2px black;"><b>Totalt</td></b>
                 </tr>
@@ -198,6 +209,7 @@ if ($products_in_cart) {
                     <td colspan="5">Kundvagnen är tom.</td>
                 </tr>
                 <?php else: ?>
+<<<<<<< Updated upstream
                 <?php foreach ($array as $product): ?>
                 <tr>
                     <td class="img">
@@ -214,11 +226,31 @@ if ($products_in_cart) {
                     </td>
                     <td class="price"><?=$product['Kategori']?></td>
                     <td class="price"><?=$product['Pris']?> kr</td>
+=======
+                <?php foreach ($array as $product): ?>   
+                <tr>
+                <td> <!-- Bild -->
+                    <a href="index.php?page=product&id=<?=$product['ProduktID']?>">
+        
+                        <?php getImg($product['ProduktID'])?>  
+                                            
+                    </a>
+                </td>
+                    <td class="price"><?=$product['Färg']?></td> <!-- Färg -->
+                        <br>
+                    </td>
+                    <td class="price"><?=$product['Kategori']?></td> <!-- Kategori -->
+                    <td class="price"><?=$product['Pris']?> kr</td> <!-- Pris -->
+>>>>>>> Stashed changes
                     <td class="quantity">
                         <input type="number" name="quantity-<?=$product['ProduktID']?>" value="<?=$products_in_cart[$product['ProduktID']]?>" min="1" max="<?=$product['Kvantitet']?>" placeholder="Quantity" required>
                     </td>
                     <td class="price"><?=$product['Pris'] * $products_in_cart[$product['ProduktID']]?> kr</td>
                 </tr>
+<<<<<<< Updated upstream
+=======
+                
+>>>>>>> Stashed changes
                 <?php endforeach; ?>
                 <?php endif; ?>
             </tbody>
@@ -228,12 +260,52 @@ if ($products_in_cart) {
             <span class="price"><?=$subtotal?> kr.</span>
         </div>
         <div class="buttons">
+<<<<<<< Updated upstream
             <input type="submit" value="Köp" name="placeorder">
+=======
+            <!-- <input type="submit" value="Köp" name="placeorder"> -->
+>>>>>>> Stashed changes
             <input type="submit" value="Uppdatera Antal" name="update">
             <input type="submit" value="Töm Kundvagn" name="remove">
         </div>
     </form>
                 </div>
+<<<<<<< Updated upstream
+=======
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                <h1>Test</h1>
+                <form action="placeorder.php" method="POST">
+                    <table>
+                        <tr>
+                            <td><label for="Förnamn">Förnamn:</label></td>
+                            <td><input type="text" name="Förnamn"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Gatuaddress">Gatuaddress:</label></td>
+                            <td><input type="text" name="Gatuaddress"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Postnr">Postnr:</label></td>
+                            <td><input type="text" name="Postnr"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Stad">Stad:</label></td>
+                            <td><input type="text" name="Stad"><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Telefon">Telefon</label></td>
+                            <td><input type="text" name="Telefon"></td>
+                        </tr>
+                    </table>
+
+    <div class="buttons">
+    <input type="submit" name="buy" value="Köp">
+    </div>
+</form>
+                </div>
+                </div>
+>>>>>>> Stashed changes
                 </div>
                 <?php 
 
