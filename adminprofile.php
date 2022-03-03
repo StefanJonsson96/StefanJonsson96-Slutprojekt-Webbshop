@@ -61,6 +61,8 @@ $stmt->close();
         <i class="fa fa-caret-down"></i>
         <div id="myDropdown" class="dropdown-content">
             <a href="adminhome.php">Home</a>
+	    <a href="adminorders.php">Orders</a>
+            <a href="uploaditem.php">Upload new Product</a>
             <a href="adminprofile.php">Login info</a>
             <a href="logout.php">Logout</a>
         </div>
